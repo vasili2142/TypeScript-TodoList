@@ -11,15 +11,14 @@ export const addTodo = (todo: Todo, currentTodoList: Todos) => {
   currentTodoList.todos.push(todo);
 };
 
-export const editTodo = (selectTodo: Todo, property: keyof Todo, newValue: any) => {
+export const editTodo = (selectTodo: Todo, property: keyof Todo, newValue: any
+) => {
   // Need 3 parameters
   // First parameter should reference todo being edited
   // Second paramter should target a property of the first parameter
   // Third parameter will be the new value being returned
-  
-  return selectTodo[property] = newValue;
 
-  // return (todo.[property] = newValue);
+  // return (selectTodo[property] = newValue);
 };
 export const deleteTodo = (todosList: Todos, { id }: Todo) => {
   // 2 parameters
