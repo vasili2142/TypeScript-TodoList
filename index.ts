@@ -68,7 +68,7 @@ addTodo(anotherTodo, initialTodosList);
 // const updated = editTodo(testTodo, testTodo.dueDate, 2222);
 // console.log(updated);
 
-const test = editTodo(anotherTodo, "id", 4);
+const test = editTodo(anotherTodo.id, anotherTodo);
 console.log(test);
 
 // create a script to delete a todo from the list
